@@ -1,0 +1,16 @@
+{
+  "name": "copy-to-pi",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-watch": "^4.3.11"
+  },
+  "description": "",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
