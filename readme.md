@@ -8,7 +8,9 @@ Every time the files change on your local device, they will be copied to the rem
 
 If you use Visual Studio Code, autosave is enabled by default and updates after you finish typing.
 
-The 'src' folder is used by convention, and is the working folder for your code. As long as your run the command > gulp from this folder, your editor can open and edit any file without the knowledge of this folder.
+The 'src' folder is used by convention, and is the working folder for your code. As long as your run the command > gulp from this root folder, your editor can open and edit any file in the src folder without the knowledge of this folder.
+
+It does not delete files on the remote pi only copies and overwrites them at the moment.
 
 This has been tested on windows using powershell
 
@@ -18,6 +20,9 @@ This has been tested on windows using powershell
 4. run the command > npm install
 5. edit the gulpfile.js on your pc to match your file locations
 6. run the command > gulp
+
+Once the repo has been cloned from Github you can remove the Git files if you want to,
+all you need to leave are the package.json, gulpfile.js, node_modules folder and the src folder.
 
 
 
