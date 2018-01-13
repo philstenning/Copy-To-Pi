@@ -19,7 +19,7 @@ This has been tested on windows using powershell
 3. Open powershell in the root of this repo on your PC
 4. run the command > npm install
 5. edit the gulpfile.js on your pc to match your file locations
-6. run the command > gulp
+6. run the command > gulp to copy all to your device
 
 Once the repo has been cloned from Github you can remove the Git files if you want to,
 all you need to leave are the package.json, gulpfile.js, node_modules folder and the src folder.
