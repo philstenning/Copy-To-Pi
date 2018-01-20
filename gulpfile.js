@@ -3,9 +3,9 @@ watch = require('gulp-watch');
 const changed = require('gulp-changed')
 const debug = require('gulp-debug');
 
-const SRC = './src/**';
-const SRC_PY = './src/*.py';
-const DEST = '//RASPI/PiShare/your_folder';
+const SRC = './dalekbot/**';
+const SRC_PY = './dalekbot/*.py';
+const DEST = '//RASPI/share/dalekbot';
 
  
 
