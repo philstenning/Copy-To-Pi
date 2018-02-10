@@ -4,7 +4,7 @@ const changed = require('gulp-changed')
 const debug = require('gulp-debug');
 
 const SRC = './dalekbot/**';
-const SRC_PY = './dalekbot/*.py';
+const SRC_PY = './dalekbot/*/*.py';
 const DEST = '//RASPI/share/dalekbot';
 
  
@@ -18,9 +18,18 @@ gulp.task('changed', function () {
   })
 });
 
+gulp.task('changed_py', function () {
+  return watch(SRC_PY, function () {
+    gulp.src(SRC_PY)
+      .pipe(changed(DEST))
+      .pipe(debug({title: 'copied:'}))
+      .pipe(gulp.dest(DEST))
+  })
+});
+
 gulp.task('python', function () {
-  return watch('./src/*.py')
-  gulp.src('./src/*.py')
+  return watch(SRC_PY)
+  gulp.src(SRC_PY)
     .pipe(gulp.dest(DEST));
 });
 
